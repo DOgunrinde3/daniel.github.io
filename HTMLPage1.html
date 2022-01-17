@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Spacestagram - Daniel Ogunrinde</title>
+
+    <link rel="stylesheet" href="StyleSheet1.css">
+    
+
+</head>
+<body width="100%">
+    <table width="100%">
+        <!-- main heading row -->
+        <tr id="heading">
+            <td colspan="6">
+
+                <h1 align="center">Spacestagram</h1>
+
+            </td>
+        </tr>
+        <!-- nav menu row  -->
+        <tr id="nav" bgcolor="#ffffff">
+            <td width="300">
+
+                <input type="date" id="lookup" name="image-lookup"
+                       value=""
+                       min="2021-01-01" max="2022-12-31">
+
+            </td>
+            <td width="100">
+                <button id="search" width="100">Search!</button>
+            </td>
+        </tr>
+
+        <!-- spacer row -->
+        <tr id="spacer" height="10">
+            <td>
+            </td>
+        </tr>
+        <!-- main content and aside row -->
+        <tr id="main">
+            <td id="content" colspan="4" width="300px" height="300px">
+
+                <!-- main content goes here -->
+            </td>
+            <td id="aside" colspan="2" valign="top" style="max-width:700px; padding:20px;">
+                <h2 id="spacetitle" class=""></h2>
+                <p id="date"></p>
+                <p id="explain"></p>
+
+                <div id="like" class="heart" onclick="myFunction(this)"></div>
+
+                <!-- aside content goes here -->
+
+            </td>
+        </tr>
+        <!-- spacer row -->
+        <tr id="spacer" height="10">
+            <td>
+            </td>
+        </tr>
+        <!-- footer row -->
+        <tr id="footer" >
+            <td colspan="6">
+                <p style="color:white;">©Copyright 2022 by Daniel Ogunrinde. All rights reversed.</p>
+            </td>
+        </tr>
+    </table>
+
+    <script src="Script1.js"></script>
+
+    <script>
+        function myFunction(x) {
+            x.classList.toggle("heartliked");
+        }
+    </script>
+
+
+</body>
+
+
+</html>
